@@ -1,0 +1,25 @@
+/* ============================================================
+   EaseMotion CSS — ease-rotate-y (issue #7071)
+   Utility class for smooth Y‑axis rotation.
+   ============================================================ */
+
+/* Utility class */
+.ease-rotate-y-7071 {
+  display: inline-block;
+  perspective: 1000px;
+  transform: rotateY(0deg);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.ease-rotate-y-7071:hover,
+.ease-rotate-y-7071:focus-visible {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ease-rotate-y-7071 {
+    transition: none !important;
+    transform: none !important;
+  }
+}

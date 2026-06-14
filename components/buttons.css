@@ -328,3 +328,10 @@
   }
 }
 }
+
+/* Reduced motion support: disable button transitions */
+@media (prefers-reduced-motion: reduce) {
+  .ease-btn {
+    transition: none !important;
+  }
+}
